@@ -28,7 +28,7 @@ li {
   padding: 0;
 }
 
-li::first-letter {
+li:first-letter {
   text-transform: capitalize;
 }
 
@@ -38,8 +38,16 @@ h1 {
   line-height: 16px;
 }
 
+.weather-temperature {
+  display: inline-block;
+  width: 50%;
+}
 .weather-temperature img {
-  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  margin-top: 0px;
+  vertical-align: top;
+  line-height: 26px;
 }
 
 .weather-temperature strong {
