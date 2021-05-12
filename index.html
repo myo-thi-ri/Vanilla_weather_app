@@ -12,6 +12,7 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -27,21 +28,22 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>29</strong><span class="units">°C | °F</span>
+                  <strong id="temperature"></strong
+                  ><span class="units">°C | °F</span>
                 </div>
                 <ul>
-                  <li>Precipitation: 40%</li>
-                  <li>Humidity: 53%</li>
-                  <li>Wind: 1 m/s</li>
+                  <li>Precipitation: <span id="precipitation"></span>%</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> m/s</li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6">
-              <h1>Shimotsuruma, Yamato</h1>
+              <h1 id="city"></h1>
               <h1>Kanagawa</h1>
               <ul>
                 <li>Wednesday 10:00</li>
-                <li>Cloudy</li>
+                <li id="description"></li>
               </ul>
             </div>
           </div>
@@ -56,6 +58,6 @@
         </small>
       </div>
     </div>
-    <link rel="stylesheet" href="src/app.js" />
+    <script src="src/app.js"></script>
   </body>
 </html>
