@@ -19,6 +19,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 li {
   color: #70757a;
   font-size: 12px;
@@ -61,4 +65,13 @@ h1 {
   position: relative;
   font-size: 16px;
   top: -22px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }

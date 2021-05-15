@@ -19,13 +19,14 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form action="" class="mb-3">
+          <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
                 <input
                   type="text"
                   placeholder="Type a city.."
                   class="form-control"
+                  id="city-input"
                 />
               </div>
               <div class="col-3">
@@ -40,7 +41,11 @@
                 <div class="float-left">
                   <strong id="temperature"></strong
                   ><span class="units"
-                    >°C |<a href="" id="fahrenheit-link">°F</a></span
+                    ><a href="" id="celcius-link" class="active">°C</a> |<a
+                      href=""
+                      id="fahrenheit-link"
+                      >°F</a
+                    ></span
                   >
                 </div>
                 <ul>
