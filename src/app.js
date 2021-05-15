@@ -65,5 +65,21 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+// function displayFahrenheitTemperature(event) {
+//   event.preventDefault();
+//   let fahrenheitLink = (14 * 9) / 5 + 32;
+//   alert(fahrenheitLink);
+// }
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  alert("Link is clicked.");
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+// let fahrenheitLink = document.querySelector("#fahrenheit-link");
+// fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
