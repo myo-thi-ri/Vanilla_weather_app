@@ -1,7 +1,7 @@
 body {
   font-size: arial, sans-serif;
   color: #202124;
-  background-color: bisque;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -13,7 +13,11 @@ body {
   border-radius: 5px;
   max-width: 600px;
   padding: 20px;
-  background-color: burlywood;
+  background: radial-gradient(
+    755px at 10.1% 95.3%,
+    rgb(242, 188, 141) 0%,
+    rgb(242, 159, 141) 100.2%
+  );
 }
 
 ul {
@@ -107,7 +111,11 @@ h1 {
 }
 
 #one:hover {
-  background-color: aqua;
+  background: linear-gradient(
+    179.4deg,
+    rgb(253, 240, 233) 2.2%,
+    rgb(255, 194, 203) 96.2%
+  );
 }
 
 #result {
