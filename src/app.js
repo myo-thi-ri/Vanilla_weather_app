@@ -35,6 +35,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
+  //console.log(response);
   let listElement = document.querySelector(".list");
 
   let lists = "";
@@ -71,6 +72,7 @@ function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
+  cityInputElement.value = "";
 }
 
 function displayFahrenheitTemperature(event) {
@@ -146,6 +148,9 @@ function showLocation(position) {
   axios.get(apiUrl).then(displayTemperature);
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  navigator.geolocation.getCurrentPosition(showLocation);
+});
 function currentLocation(event) {
   event.preventDefault();
   // console.log("clicked");

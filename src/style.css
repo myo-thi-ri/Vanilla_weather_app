@@ -1,6 +1,7 @@
 body {
   font-size: arial, sans-serif;
   color: #202124;
+  background-color: bisque;
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -12,6 +13,7 @@ body {
   border-radius: 5px;
   max-width: 600px;
   padding: 20px;
+  background-color: burlywood;
 }
 
 ul {
@@ -110,4 +112,8 @@ h1 {
 
 #result {
   margin-top: 30px;
+}
+
+img {
+  width: 100%;
 }
